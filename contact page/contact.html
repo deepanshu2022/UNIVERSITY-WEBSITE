@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DCU - Dublin City University | CONTACT US</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="bg-img">
+      <div class="container">
+        <header>
+          <a href="index.html"
+            ><img class="logo" src="../images/dcu-logo.png" alt="DCU logo"
+          /></a>
+          <nav>
+            <ul id="navLinks">
+              <ion-icon
+                class="close-icon"
+                name="close-circle"
+                onclick="hideMenu()"
+              ></ion-icon>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="../index.html#course">course</a></li>
+              <li><a href="../blog page/blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </nav>
+          <ion-icon
+            class="menu-icon"
+            name="menu-outline"
+            onclick="showMenu()"
+          ></ion-icon>
+        </header>
+      </div>
+
+      <section class="hero">
+        <h2>Contact Us</h2>
+      </section>
+    </div>
+
+    <section class="location container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.6488773284536!2d-6.261028984160092!3d53.38533167998716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e1b2f9d5d03%3A0x12bb45984107c2a8!2sDublin%20City%20University!5e0!3m2!1sen!2sin!4v1662312019859!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="contact container">
+      <div>
+        <div class="contact-info">
+          <div class="contact-icon">
+            <ion-icon name="home"></ion-icon>
+          </div>
+          <div class="contact-text">
+            <h3>Xyz Road, Abc Building</h3>
+            <p>North Campus, Delhi, IN</p>
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <div class="contact-icon">
+            <ion-icon name="call"></ion-icon>
+          </div>
+          <div class="contact-text">
+            <h3>+112 123456789</h3>
+            <p>Monday to Saturday, 10 Am to 5 pm</p>
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <div class="contact-icon">
+            <ion-icon name="mail"></ion-icon>
+          </div>
+          <div class="contact-text">
+            <h3>info@universitymail.com</h3>
+            <p>Email us your query</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-box">
+        <form class="contact-form" action="form-handler.php" method="post">
+          <input type="text" name="name" placeholder="Enter Name" />
+          <input type="email" name="email" placeholder="Enter Email" />
+          <input type="text" name="subject" placeholder="Enter your subject" />
+          <textarea
+            rows="5"
+            name="message"
+            placeholder="Message"
+            required
+          ></textarea>
+          <button type="submit" class="btn">SEND MESSAGE</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <h4>About us</h4>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo fugiat
+        ipsam dolor sequi, explicabo atque. Debitis blanditiis ullam obcaecati
+        consectetur molestias dolorem aliquam alias in corrupti.
+      </p>
+      <div class="social-links">
+        <ul>
+          <li>
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+          </li>
+        </ul>
+      </div>
+      <p>&copy; 1998 by DUBLIN CITY UNIVERSITY</p>
+    </footer>
+
+    <!-- SCRIPT -->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-70rem";
+      }
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

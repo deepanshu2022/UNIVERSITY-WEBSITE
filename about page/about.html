@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DCU - Dublin City University</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="bg-img">
+      <div class="container">
+        <header>
+          <a href="index.html"
+            ><img class="logo" src="../images/dcu-logo.png" alt="DCU logo"
+          /></a>
+          <nav>
+            <ul id="navLinks">
+              <ion-icon
+                class="close-icon"
+                name="close-circle"
+                onclick="hideMenu()"
+              ></ion-icon>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="../index.html#course">course</a></li>
+              <li><a href="../blog page/blog.html">Blog</a></li>
+              <li><a href="../contact page/contact.html">Contact us</a></li>
+            </ul>
+          </nav>
+          <ion-icon
+            class="menu-icon"
+            name="menu-outline"
+            onclick="showMenu()"
+          ></ion-icon>
+        </header>
+      </div>
+
+      <section class="hero">
+        <h2>ABOUT US</h2>
+      </section>
+    </div>
+
+    <section class="about container">
+      <div class="about-text">
+        <h2>We are the world's largest University</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel mollitia
+          libero eius numquam, officiis fuga dolorum ea veritatis iste
+          recusandae consequuntur! Sunt iure iusto rerum velit, quidem, sint
+          adipisci illum quae, fuga modi distinctio non. Autem dignissimos modi
+          eveniet et labore! Libero optio aliquid ratione consequatur placeat
+          voluptatum in temporibus architecto? Dolore quod aut non dolores
+          praesentium fugit dignissimos, a illo earum maiores quae voluptate
+          nemo repellat fugiat aperiam? Earum!
+        </p>
+        <a href="#" class="btn">EXPLORE NOW</a>
+      </div>
+
+      <img src="../images/about.jpg" alt="People at office" />
+    </section>
+
+    <footer>
+      <h4>About us</h4>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo fugiat
+        ipsam dolor sequi, explicabo atque. Debitis blanditiis ullam obcaecati
+        consectetur molestias dolorem aliquam alias in corrupti.
+      </p>
+      <div class="social-links">
+        <ul>
+          <li>
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+          </li>
+        </ul>
+      </div>
+      <p>&copy; 1998 by DUBLIN CITY UNIVERSITY</p>
+    </footer>
+
+    <!-- SCRIPT -->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-70rem";
+      }
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

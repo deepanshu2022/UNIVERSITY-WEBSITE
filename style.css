@@ -1,0 +1,424 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+/* General */
+.container {
+  margin: 0 9rem;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  margin-top: 8rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.4rem;
+}
+
+.subtext {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-bottom: 6rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #aaa;
+  font-weight: 400;
+}
+
+/* HERO BG IMAGE (MAIN-IMG) */
+
+.bg-img {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(./images/banner.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* Header // Nav */
+header {
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 20rem;
+}
+
+nav ul {
+  display: flex;
+  text-transform: uppercase;
+  gap: 1.8rem;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0.8rem 0;
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav ul li::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #f44336;
+  display: block;
+  margin: auto;
+  transition: all 0.5s;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+.close-icon {
+  font-size: 2.4rem;
+  color: #fff;
+  display: none;
+}
+.menu-icon {
+  display: none;
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+/* Hero Section */
+
+.hero {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 6rem;
+  margin-bottom: 1.8rem;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  margin-bottom: 5rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1.2rem 3.4rem;
+  font-size: 1.2rem;
+  color: #fff;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #f44336;
+  border: 2px solid #f44336;
+  transition: 1s;
+}
+
+/* SECTION - COURSES */
+
+.course-col {
+  width: 80%;
+  margin: auto;
+  background-color: #fff3f3;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 2.2rem 2rem;
+  transition: 0.5s;
+}
+
+.course-col p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #aaa;
+  font-weight: 400;
+}
+
+.course-col:hover {
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
+}
+
+/* SECTION - CAMPUS */
+
+.campus {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.campus-col {
+  position: relative;
+  border-radius: 1rem;
+
+  overflow: hidden;
+}
+
+.layer {
+  /* background-color: rgba(226, 0, 0, 0.7); */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover {
+  background-color: rgba(226, 0, 0, 0.5);
+}
+
+.layer h3 {
+  opacity: 0;
+  width: 100%;
+  font-weight: 500;
+  font-size: 2.6rem;
+  color: #fff;
+  bottom: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  position: absolute;
+  transition: 0.5s;
+}
+
+.layer:hover h3 {
+  opacity: 1;
+  bottom: 45%;
+}
+
+/* SECTION - FACILITIES */
+
+.facility {
+  width: 80%;
+  margin: auto;
+}
+
+.facility-col {
+  border-radius: 0.8rem;
+  overflow: hidden;
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.facility-col h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.facility-col p {
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* SECTION - TESTIMONIALS */
+
+.testimonial {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 8rem;
+}
+
+.reviews {
+  display: flex;
+  gap: 3rem;
+}
+
+.user {
+  background-color: #fff3f3;
+  display: flex;
+  padding: 2rem;
+}
+
+.user img {
+  margin: 0 3rem 0 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.user-text p {
+  margin-bottom: 1rem;
+}
+
+.star {
+  font-size: 1.6rem;
+  color: #f44336;
+}
+
+/* SECTION - CTA */
+
+.cta {
+  padding: 8rem 0;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(./images/banner2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin-bottom: 8rem;
+  text-align: center;
+  border-radius: 0.8rem;
+}
+
+.cta h2 {
+  margin-top: 0;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+/* FOOTER */
+footer {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+footer h4 {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+footer p {
+  margin-bottom: 2rem;
+}
+
+.social-links ul {
+  display: flex;
+  font-size: 1.6rem;
+  list-style: none;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.social-links ul li a {
+  color: #f44336;
+}
+
+/********************************************/
+/* MEDIA QUERIES */
+
+@media (max-width: 58.5em) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    margin: 0 1rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  .subtext {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 1rem 2rem;
+  }
+
+  nav ul {
+    display: block;
+    position: absolute;
+    background-color: #f44336;
+    height: 100vh;
+    width: 50%;
+    top: 0;
+    right: -70rem;
+    text-align: left;
+    z-index: 3;
+    padding: 2rem 2rem;
+    transition: 1s ease-in-out;
+  }
+
+  .close-icon {
+    z-index: 999;
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-icon {
+    display: block;
+    margin: 2rem 2rem 0 0;
+  }
+
+  .grid {
+    display: block;
+  }
+
+  .course-col,
+  .campus-col,
+  .facility-col,
+  .user {
+    margin-bottom: 2rem;
+  }
+
+  .campus,
+  .facility,
+  .testimonial {
+    width: 80%;
+    margin: auto;
+  }
+
+  .reviews {
+    display: block;
+    margin-bottom: 8rem;
+  }
+
+  .cta {
+    margin-bottom: 8rem;
+  }
+  .cta h2 {
+    font-size: 2rem;
+  }
+
+  footer {
+    width: 70%;
+  }
+}

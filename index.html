@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DCU - Dublin City University</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="bg-img">
+      <div class="container">
+        <header>
+          <a href="index.html"
+            ><img class="logo" src="./images/dcu-logo.png" alt="DCU logo"
+          /></a>
+          <nav>
+            <ul id="navLinks">
+              <ion-icon class="close-icon" name="close-circle" onclick="hideMenu()"></ion-icon>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="./about page/about.html">about</a></li>
+              <li><a href="#course">course</a></li>
+              <li><a href="./blog page/blog.html">Blog</a></li>
+              <li><a href="./contact page/contact.html">Contact us</a></li>
+            </ul>
+          </nav>
+          <ion-icon class="menu-icon" name="menu-outline" onclick="showMenu()"></ion-icon>
+        </header>
+      </div>
+
+      <section class="hero">
+        <h1>World's Biggest University</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          culpa, facere soluta <br />
+          esse eaque incidunt porro pariatur commodi?
+        </p>
+        <a class="btn" href="#">Visit us to know more</a>
+      </section>
+    </div>
+
+    <section class="campus container">
+      <h2>Our Global campus</h2>
+      <p class="subtext">Lorem ipsum dolor, sit amet consectetur adit.</p>
+
+      <div class="grid">
+        <div class="campus-col">
+          <img src="./images/london.png" alt="london campus" />
+          <div class="layer"><h3>LONDON</h3></div>
+        </div>
+
+        <div class="campus-col">
+          <img src="./images/newyork.png" alt="london campus" />
+          <div class="layer"><h3>New York</h3></div>
+        </div>
+
+        <div class="campus-col">
+          <img src="./images/washington.png" alt="london campus" />
+          <div class="layer"><h3>Washington</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="courses container" id="course">
+      <h2>Courses We Offer</h2>
+      <p class="subtext">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      </p>
+
+      <div class="grid">
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
+            aliquam modi cum magnam tenetur necessitatibus eos quod labore
+            cupiditate impedit et, quis, tempore cumque facilis. Autem nihil nam
+            est cumque?
+          </p>
+        </div>
+
+        <div class="course-col">
+          <h3>Degree</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
+            aliquam modi cum magnam tenetur necessitatibus eos quod labore
+            cupiditate impedit et, quis, tempore cumque facilis. Autem nihil nam
+            est cumque?
+          </p>
+        </div>
+
+        <div class="course-col">
+          <h3>Post Graduation</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
+            aliquam modi cum magnam tenetur necessitatibus eos quod labore
+            cupiditate impedit et, quis, tempore cumque facilis. Autem nihil nam
+            est cumque?
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="facility container">
+      <h2>Our Facilities</h2>
+      <p class="subtext">Lorem ipsum dolor, sit amet consectetur adit.</p>
+      <div class="grid">
+        <div class="facility-col">
+          <img src="./images/library.png" alt="library" />
+          <h3>World Class Library</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+            dolore quaerat aliquam.
+          </p>
+        </div>
+
+        <div class="facility-col">
+          <img src="./images/basketball.png" alt="basketball" />
+          <h3>Largest Play Ground</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+            dolore quaerat aliquam.
+          </p>
+        </div>
+
+        <div class="facility-col">
+          <img src="./images/cafeteria.png" alt="cafeteria" />
+          <h3>Tasty and Healthy Food</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+            dolore quaerat aliquam.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial container">
+      <h2>What Our Student Says</h2>
+      <p class="subtext">Lorem ipsum dolor, sit amet consectetur adit.</p>
+
+      <div class="reviews">
+        <div class="user">
+          <img src="./images/user1.jpg" alt="user-1">
+          <div class="user-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde adipisci voluptatem repellendus officiis ex quo a id nihil rem. Temporibus voluptatibus ullam aspernatur iure sequi cum, voluptas cumque sapiente doloremque.</p>
+            <h3>Christine Berkley</h3>
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star-outline"></ion-icon>
+          </div>
+        </div>
+
+        <div class="user">
+          <img src="./images/user2.jpg" alt="user-2">
+          <div class="user-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde adipisci voluptatem repellendus officiis ex quo a id nihil rem. Temporibus voluptatibus ullam aspernatur iure sequi cum, voluptas cumque sapiente doloremque.</p>
+            <h3>David Byer</h3>
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star-half"></ion-icon>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta container">
+      <h2>Enroll For Our Various Online Courses <br> Anywhere From The World</h2>
+      <a class="btn" href="#">CONTACT US</a>
+    </section>
+
+    <footer>
+      <h4>About us</h4>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo fugiat ipsam dolor sequi, explicabo atque. Debitis blanditiis ullam obcaecati consectetur molestias dolorem aliquam alias in corrupti.</p>
+      <div class="social-links">
+        <ul>
+          <li>
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+          </li>
+        </ul>
+      </div>
+      <p>&copy; 1998 by DUBLIN CITY UNIVERSITY</p>
+    </footer>
+
+    <!-- SCRIPT -->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+      function hideMenu(){
+        navLinks.style.right = "-70rem";
+      }
+
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
