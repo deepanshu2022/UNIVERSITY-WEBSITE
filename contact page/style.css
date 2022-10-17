@@ -222,7 +222,7 @@ footer p {
 /********************************************/
 /* MEDIA QUERIES */
 
-@media (max-width: 58.5em) {
+@media (max-width: 25em) {
   body {
     overflow-x: hidden;
   }
@@ -254,6 +254,10 @@ footer p {
     transition: 1s ease-in-out;
   }
 
+  .logo {
+    width: 15rem;
+  }
+
   .close-icon {
     z-index: 999;
     display: block;
@@ -267,5 +271,11 @@ footer p {
 
   footer {
     width: 70%;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  * {
+    font-size: 70%;
   }
 }

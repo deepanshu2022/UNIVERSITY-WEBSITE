@@ -336,7 +336,7 @@ footer p {
 /********************************************/
 /* MEDIA QUERIES */
 
-@media (max-width: 58.5em) {
+@media (max-width: 25em) {
   body {
     overflow-x: hidden;
   }
@@ -390,6 +390,10 @@ footer p {
 
   .grid {
     display: block;
+  }
+
+  .logo {
+    width: 15rem;
   }
 
   .course-col,

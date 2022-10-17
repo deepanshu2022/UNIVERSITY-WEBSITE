@@ -200,7 +200,7 @@ footer p {
 /********************************************/
 /* MEDIA QUERIES */
 
-@media (max-width: 58.5em) {
+@media (max-width: 25em) {
   body {
     overflow-x: hidden;
   }
@@ -238,6 +238,10 @@ footer p {
     cursor: pointer;
   }
 
+  .logo {
+    width: 15rem;
+  }
+
   .menu-icon {
     display: block;
     margin: 2rem 2rem 0 0;
@@ -245,5 +249,11 @@ footer p {
 
   footer {
     width: 70%;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  * {
+    font-size: 70%;
   }
 }
